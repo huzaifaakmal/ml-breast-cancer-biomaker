@@ -59,6 +59,6 @@ prediction = pipeline.predict(new_data)
 - **Immune Context:** Higher signature expression is a surrogate for CD8+ T cell infiltration ('immune-hot' state).
 
 ## 📜 Citation & DOI
-This work is archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20669004.svg)](https://doi.org/10.5281/zenodo.20669004)
+This work is archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20669329.svg)](https://doi.org/10.5281/zenodo.20669329)
 
 All methodology follows standard bioinformatics best practices and TRIPOD-AI reporting guidelines.
