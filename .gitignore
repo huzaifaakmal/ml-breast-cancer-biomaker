@@ -26,6 +26,7 @@ venv.bak/
 # Manuscripts and Templates (Exclude from GitHub)
 /Manuscript/
 /els-cas-templates/
+/docs/
 
 # OS generated files
 .DS_Store
