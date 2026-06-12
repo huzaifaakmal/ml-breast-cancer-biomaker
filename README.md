@@ -21,15 +21,13 @@ This project identifies robust gene expression signatures for breast cancer and 
 - `Data/`: Directory structure for datasets (GSE42568, GSE15852).
 
 ## 📁 Supplementary Code & Reproducibility
-The following notebooks constitute the **Supplementary Code** for the manuscript:
+The following notebooks constitute the **Supplementary Code** for the study:
 1. `01_Informatics_Standard_ML_Pipeline.ipynb`: Core model training and calibration.
 2. `04_Model_Benchmarking_and_Comparison.ipynb`: Performance comparisons, SHAP analysis, and DCA.
 3. `05_Biological_Validation.ipynb`: GO/KEGG enrichment and ESTIMATE/TIMER validation.
 4. `08_Batch_Effect_and_Subtype_Analysis.ipynb`: PVCA and subtype-adjusted survival.
 
-All code is documented and designed for one-click reproduction of study findings.
-
-**Note:** During the June 2026 restructuring, the original raw GSE matrix files and some intermediate processed CSVs were moved. If data paths are missing, please restore the GSE files into `/Data/raw` from your original backup.
+All code is documented and designed for reproducibility of the study findings.
 
 ## 🛠️ Usage
 ### 1. Installation
@@ -39,7 +37,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Running the Analysis
-Run the Jupyter notebooks in order (`00` through `07`) to reproduce the study. Note: Notebooks have been updated to reflect the new `/Data/raw` directory structure.
+Run the Jupyter notebooks in order (`00` through `08`) to reproduce the study.
 
 ### 3. Inference
 To use the trained model for new predictions:
@@ -60,5 +58,7 @@ prediction = pipeline.predict(new_data)
 - **Prognostic Impact:** Signature score correlates with significantly improved relapse-free survival (HR = 0.64), though captured primarily by clinical grade.
 - **Immune Context:** Higher signature expression is a surrogate for CD8+ T cell infiltration ('immune-hot' state).
 
-## 📜 Publication
-The final manuscript is available in `/Manuscript/Manuscript_Final.md`. All methodology follows standard bioinformatics best practices and TRIPOD-AI reporting guidelines for *Computers in Biology and Medicine*.
+## 📜 Citation & DOI
+This work is archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20669004.svg)](https://doi.org/10.5281/zenodo.20669004)
+
+All methodology follows standard bioinformatics best practices and TRIPOD-AI reporting guidelines.
