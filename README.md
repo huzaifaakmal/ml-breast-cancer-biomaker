@@ -12,6 +12,14 @@ This project identifies robust gene expression signatures for breast cancer and 
 - **Model Interpretability:** Includes **SHAP (SHapley Additive exPlanations)** analysis for transparency.
 - **Decision Curve Analysis (DCA):** Now includes **95% Confidence Intervals** for clinical utility assessment.
 
+## 📁 Repository Structure
+- `notebooks/`: Comprehensive pipeline from preprocessing to validation.
+- `models/`: Finalized `breast_cancer_pipeline_v1.pkl` for diagnostic inference.
+- `figures/`: High-resolution publication-ready visualizations.
+- `requirements.txt`: Environment specification for full reproducibility.
+- `LICENSE`: MIT License terms.
+- `Data/`: Directory structure for datasets (GSE42568, GSE15852).
+
 ## 📁 Supplementary Code & Reproducibility
 The following notebooks constitute the **Supplementary Code** for the manuscript:
 1. `01_Informatics_Standard_ML_Pipeline.ipynb`: Core model training and calibration.

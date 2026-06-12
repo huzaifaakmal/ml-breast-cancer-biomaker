@@ -17,23 +17,15 @@ env.bak/
 venv.bak/
 
 # Data and Models
-/Data/raw/
-/Data/processed/*.csv
-/Data/processed/*.pkl
+/Data/
 /models/*.pkl
+!/models/breast_cancer_pipeline_v1.pkl
 *.h5
 *.hdf5
 
-# LaTeX/Elsevier Template outputs
-/els-cas-templates/*.aux
-/els-cas-templates/*.bbl
-/els-cas-templates/*.blg
-/els-cas-templates/*.log
-/els-cas-templates/*.out
-/els-cas-templates/*.pdf
-/els-cas-templates/*.spl
-/els-cas-templates/*.synctex.gz
-/els-cas-templates/*.tex.bak
+# Manuscripts and Templates (Exclude from GitHub)
+/Manuscript/
+/els-cas-templates/
 
 # OS generated files
 .DS_Store
