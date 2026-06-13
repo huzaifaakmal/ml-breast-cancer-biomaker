@@ -12,6 +12,10 @@ This project identifies robust gene expression signatures for breast cancer and 
 - **Model Interpretability:** Includes **SHAP (SHapley Additive exPlanations)** analysis for transparency.
 - **Decision Curve Analysis (DCA):** Now includes **95% Confidence Intervals** for clinical utility assessment.
 
+## 👥 Authors & Supervision
+- **Huzaifa Akmal** (Lead Developer/Author) - Sanata Dharma University
+- **Narendar Kumar** (Supervisor) - University of Technology of Belfort-Montbéliard (UTBM)
+
 ## 📁 Repository Structure
 - `notebooks/`: Comprehensive pipeline from preprocessing to validation.
 - `models/`: Finalized `breast_cancer_pipeline_v1.pkl` for diagnostic inference.
