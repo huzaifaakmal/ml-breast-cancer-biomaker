@@ -17,7 +17,6 @@
 
 %% ---- Author convenience macros (optional) ----
 \newcommand{\gene}[1]{\textit{#1}}
-% \newcommand{\gene}[1]{\textit{#1}}   % italicise gene names, e.g. \gene{FHL1}
 
 \begin{document}
 \let\WriteBookmarks\relax
@@ -30,6 +29,7 @@
 \title[mode=title]{A Compact 5-Gene Signature (\gene{FHL1}, \gene{PCK1}, \gene{ACVR1C}, \gene{FABP4}, and \gene{MT1H}) for Diagnostic Prediction and Immune Characterization in Breast Cancer: An Integrated Machine Learning Approach}
 
 \author[1]{Huzaifa Akmal}
+\credit{Conceptualization, Methodology, Software, Investigation, Writing - Original Draft}
 \affiliation[1]{organization={Sanata Dharma University},
             city={Yogyakarta},
             country={Indonesia}}
@@ -37,6 +37,7 @@
 \author[2]{Narendar Kumar}
 \cormark[1]
 \ead{narendar.kumar@utbm.fr}
+\credit{Supervision, Validation, Writing - Review & Editing}
 \affiliation[2]{organization={University of Technology of Belfort-Montb\'eliard (UTBM), CIAD UR 7533},
             postcode={90000},
             city={Belfort},
@@ -132,7 +133,7 @@ A critical challenge in cross-platform validation was the absence of probes for 
 Matthews Correlation Coefficient (MCC) and Brier Scores were calculated for both internal CV and external validation cohorts to assess predictive reliability. Clinical net benefit was evaluated via Decision Curve Analysis (DCA), comparing the signature against `Treat All' and `Treat None' strategies \citep{vickers2006}. DCA was framed around the clinical scenario in which a parsimonious molecular classifier adds value beyond histopathology by identifying high-risk patients. Improvement in risk prediction was supported by the Net Reclassification Index (NRI). To provide orthogonal evidence at the protein level, the expression of the five signature genes was cross-referenced with the Human Protein Atlas (HPA) and CPTAC proteomic data. RFS was compared via log-rank tests and multivariate Cox models adjusted for age, grade, ER status, HER2 status, and lymph node status using the KM-Plotter 2022 aggregate cohort (Table~\ref{tbl:kmplot}).
 
 \subsection{Immune Landscape Analysis}\label{sec:immune}
-CIBERSORT deconvolution (LM22 matrix, 1,000 permutations) was run in `absolute mode' to facilitate absolute intra-sample comparisons. Quality filtering excluded samples with $p > 0.05$. The 22 immune cell types include: B cells, plasma cells, T cells (CD8\textsuperscript{+}, CD4\textsuperscript{+} variants), NK cells, monocytes, macrophages (M0, M1, M2), etc. Spearman rank correlations between the 5-gene score and immune cell fractions were adjusted for multiple testing using the BH-FDR method. Findings were cross-referenced with reported ESTIMATE and TIMER scores for orthogonal confirmation.
+CIBERSORT deconvolution (LM22 matrix, 1,000 permutations) was run in `absolute mode' to facilitate absolute intra-sample comparisons. Quality filtering excluded samples with $p > 0.05$. The 22 immune cell types include: B cells, plasma cells, T cells (CD8\textsuperscript{+}, CD4\textsuperscript{+} variants), NK cells, monocytes, macrophages (M0, M1, M2), etc. Spearman rank correlations between the 5-gene score and immune cell fractions were adjusted for multiple testing using the BH-FDR method. For orthogonal validation, ESTIMATE scores (ImmuneScore, StromalScore, ESTIMATEScore) were calculated using the \texttt{estimate} package. TIMER (Tumor Immune Estimation Resource) was accessed via the \texttt{TIMER2.0} web server to quantify immune infiltration of six major cell types (B cells, CD4\textsuperscript{+} T cells, CD8\textsuperscript{+} T cells, neutrophils, macrophages, and dendritic cells) across TCGA and METABRIC cohorts. Findings were cross-referenced with these scores for orthogonal confirmation.
 
 \subsection{Computational Environment and Reproducibility}\label{sec:environment}
 All analyses were performed in R version 4.3.0 (packages: \texttt{limma} v3.56.2, \texttt{glmnet} v4.1-7, \texttt{e1071} v1.7-13, \texttt{pROC} v1.18.4, \texttt{clusterProfiler} v4.8.1, \texttt{survival} v3.5-5). Analyses were conducted on a high-performance workstation (64GB RAM, Intel i9-12900K). Parallel processing via \texttt{foreach} optimized nested CV splits. All code and environment configurations will be made publicly available upon final publication.
@@ -348,35 +349,6 @@ Supplementary data associated with this article can be found in the online versi
 \end{itemize}
 
 %% ---- Bibliography ----
-\bibliographystyle{cas-model2-names}
-\bibliography{references}
-
-\end{document}very cohorts.
-\end{itemize}
-
-%% ---- Bibliography ----
-\bibliographystyle{cas-model2-names}
-\bibliography{references}
-
-\end{document}- Bibliography ----
-\bibliographystyle{cas-model2-names}
-\bibliography{references}
-
-\end{document}y images for the five signature genes (\gene{FHL1}, \gene{PCK1}, \gene{ACVR1C}, \gene{FABP4}, and \gene{MT1H}) showing representative staining in normal glandular vs. malignant breast tissues.
-\end{itemize}
-
-%% ---- Bibliography ----
-\bibliographystyle{cas-model2-names}
-\bibliography{references}
-
-\end{document}very cohorts.
-\end{itemize}
-
-%% ---- Bibliography ----
-\bibliographystyle{cas-model2-names}
-\bibliography{references}
-
-\end{document}- Bibliography ----
 \bibliographystyle{cas-model2-names}
 \bibliography{references}
 
