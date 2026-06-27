@@ -1,0 +1,6 @@
+Gene,HPA_Antibody_ID,Normal_Tissue_Staining,Tumor_Tissue_Staining,Validation_Score
+FHL1,HPA001662,High/Moderate,Low/Not detected,Supported
+PCK1,HPA051515,Moderate,Low,Enhanced
+ACVR1C,HPA043132,High,Not detected,Supported
+FABP4,HPA002118,Moderate,Low,Supported
+MT1H,HPA043232,Moderate,Not detected,Approved
