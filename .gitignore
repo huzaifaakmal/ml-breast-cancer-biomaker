@@ -22,6 +22,8 @@ venv.bak/
 !/models/breast_cancer_pipeline_v1.pkl
 *.h5
 *.hdf5
+Final Version/Code/Data/
+*.zip
 
 # Manuscripts and Templates (Exclude from GitHub)
 /Manuscript/

@@ -1,0 +1,6 @@
+Gene,Gene_Title,HPA_Antibody_ID,Antibody_Clonality,Normal_Tissue_Staining,Tumor_Tissue_Staining,Validation_Score,IHC_Staining_Location,CPTAC_Protein_Abundance,CPTAC_p_value,Orthogonal_Validation
+FHL1,Four and a half LIM domains 1,HPA001662,Polyclonal,High/Moderate,Low/Not detected,Supported,Cytoplasmic/Nuclear,Downregulated,<0.001,HPA & CPTAC
+PCK1,Phosphoenolpyruvate carboxykinase 1,HPA051515,Polyclonal,Moderate,Low,Enhanced,Cytoplasmic,Downregulated,<0.001,HPA & CPTAC
+ACVR1C,Activin A receptor type 1C,HPA043132,Polyclonal,High,Not detected,Supported,Cytoplasmic,Downregulated,<0.001,HPA & CPTAC
+FABP4,Fatty acid binding protein 4,HPA002118,Polyclonal,Moderate,Low,Supported,Cytoplasmic,Downregulated,<0.001,HPA & CPTAC
+MT1H,Metallothionein 1H,HPA043232,Polyclonal,Moderate,Not detected,Approved,Cytoplasmic/Nuclear,Downregulated,<0.001,HPA & CPTAC
